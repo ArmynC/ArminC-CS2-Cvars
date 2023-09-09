@@ -166,8 +166,6 @@ $RECYCLE.BIN/
 *.tar
 *.tar.*
 *.tgz
-*.log
-*.log.*
 *.sig
 
 pkg/
