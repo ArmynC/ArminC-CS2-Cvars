@@ -2,17 +2,17 @@
 
 The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patchnotes/) console commands and variables (hidden/development-only too).
 
-##### View [cvarlist.log](), latest version (of this git).
+##### View [cvarlist.log](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvarlist.log), latest version (of this git).
 
 ## Version
 
 ```
-
+Limited Test Build v. 2000121/13936 [Public Release]
 ```
 
 ### History
 
-Looking for a specific release? [Here is the list of updates.]()
+Looking for a specific release? [Here is the list of updates.](https://github.com/ArmynC/ArminC-CS2-Cvars/commits/main/cvarlist.log)
 
 #### Self check
 
