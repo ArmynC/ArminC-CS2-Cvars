@@ -7,7 +7,7 @@ The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patch
 ## Version
 
 ```
-Limited Test Build v. 2000121/13936 [Public Release]
+Limited Test Build v. 2000124/13938 [Public Release]
 ```
 
 ### History
