@@ -381,7 +381,7 @@ cl_playerspray_auto_apply                                                       
 cl_playerspraydisable                                                            : false            : cl, a                            : Disable player sprays.
 cl_predict                                                                       : true             : cl, user, cheat                  : Perform client side prediction.
 cl_predictweapons                                                                : true             : cl, user                         : Perform client side prediction of weapon effects.
-cl_promoted_settings_acknowledged                                                : 1:1694100159937  : cl, a                            : 
+cl_promoted_settings_acknowledged                                                : 1:1694702206272  : cl, a                            : 
 cl_prop_debug                                                                    : cmd              : cl, cheat                        : Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1.
 cl_querycache_stats                                                              : cmd              : cl, cheat                        : Display status of the query cache (client only)
 cl_quickinventory_filename                                                       : radial_quickinventory.txt : cl, a, release                   : 
@@ -567,7 +567,7 @@ csgo_download_match                                                             
 csgo_econ_action_preview                                                         : cmd              : cl, norecord, clientcmd_can_execute : Preview an economy item
 csgo_fatdemo_enable                                                              : false            : sv, cl, rep, release             : 
 csgo_fatdemo_output                                                              : test.fatdem      : sv, cl, rep, release             : 
-csgo_map_preview_scale                                                           : 6.42371          : cl, a                            : 
+csgo_map_preview_scale                                                           : 6.42971          : cl, a                            : 
 csgo_monitorgamma                                                                : 2.2              : cl, a                            : monitor gamma (typically 2.2 for CRT and 1.7 for LCD)
 csgo_use_fullsort_for_opaque                                                     : true             : cl, cheat                        : fullsort the opaque pass when there wasn't a depth prepass
 csgo_video_settings_restore_previous                                             : cmd              : cl, release                      : csgo_video_settings_restore_previous
@@ -651,6 +651,7 @@ econ_item_icon_create                                                           
 enable_boneflex                                                                  : true             : cl, a                            : 
 endmatch_votenextmap                                                             : cmd              : cl, clientcmd_can_execute        : Votes for the next map at the end of the match
 endround                                                                         : cmd              : sv, cheat                        : End the current round.
+engine_low_latency_sleep_after_client_tick                                       : false            : release                          : When r_low_latency is enabled, this moves the low latency sleep on tick frames to happen after client simulation.
 engine_no_focus_sleep                                                            : 30               : a                                : 
 english                                                                          : true             : cl, user                         : If set to 1, running the english language set of assets.
 ent_absbox                                                                       : cmd              : sv, cheat                        : Displays the total bounding box for the given entity(s) in green.  Some entites will also display entity specific overlays.  Arguments:    {entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
@@ -2312,6 +2313,7 @@ sv_maxspeed                                                                     
 sv_maxunlag                                                                      : 0.2              : sv, release                      : Maximum lag compensation in seconds
 sv_maxvelocity                                                                   : 3500             : sv, cl, rep, release             : Maximum speed any ballistically moving object is allowed to attain per axis.
 sv_memlimit                                                                      : 0                : cheat, release                   : If set, whenever a game ends, if the total memory used by the server is greater than this # of megabytes, the server will exit.
+sv_merge_changes_after_tick_with_calcdelta                                       : 1                : release                          : This fixes bugs where pure calcdelta is used due to recipient changing but it doesn't pick up a field change where the value was changed back to same value as the from snapshot even though the destination fields change list does note the change. Set to 2 to spew any changes merged in by this fix.
 sv_metaduplication                                                               : cmd              : cheat                            : Check serializer meta for duplication, add verbose to command for full spew
 sv_min_jump_landing_sound                                                        : 260              : sv, cl, rep, release             : 
 sv_minrate                                                                       : 98304            : rep, release                     : Min bandwidth rate allowed on server, 0 == unlimited
@@ -2646,4 +2648,4 @@ weapon_sound_falloff_multiplier                                                 
 writekeybindings                                                                 : cmd              : release                          : Saves current key bindings to disk.
 zoom_sensitivity_ratio                                                           : 0.82             : cl, a, per_user                  : Additional mouse sensitivity scale factor applied when FOV is zoomed in.
 --------------
-2645 total convars/concommands
+2647 total convars/concommands
