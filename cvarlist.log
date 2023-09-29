@@ -122,7 +122,7 @@ c_thirdpersonshoulderaimdist                                                    
 c_thirdpersonshoulderdist                                                        : 40               : cl, a                            : 
 c_thirdpersonshoulderheight                                                      : 5                : cl, a                            : 
 c_thirdpersonshoulderoffset                                                      : 20               : cl, a                            : 
-cachedvalue_count_partybrowser                                                   : 0                : cl, a                            : 
+cachedvalue_count_partybrowser                                                   : 1695971329       : cl, a                            : 
 cachedvalue_count_teammates                                                      : 0                : cl, a                            : 
 callvote                                                                         : cmd              : sv                               : Start a vote on an issue.
 cam_collision                                                                    : 1                : cl, a                            : When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
@@ -183,7 +183,7 @@ cc_vr_caption_speed                                                             
 cc_vr_font_size                                                                  : 1                : cl, a                            : 0 = small, 1 = med (default), 2 = large
 cc_vr_width                                                                      : 1                : cl, a                            : 0 = narrow, 1 = med (default), 2 = wide
 changelevel                                                                      : cmd              : release                          : changelevel <mapname> :Multiplayer change level.
-cl_allow_animated_avatars                                                        : true             : cl, a, release                   : Whether or not to allow animated avatars
+cl_allow_animated_avatars                                                        : false            : cl, a, release                   : Whether or not to allow animated avatars
 cl_auto_cursor_scale                                                             : true             : a                                : Automatic cursor size scaling.
 cl_autobuy                                                                       : vesthelm vest m4a1 ak47 famas galilar mp7 nova defuser : cl, release                      : The order in which autobuy will attempt to purchase items
 cl_autohelp                                                                      : false            : cl, a, user                      : Auto-help
@@ -204,8 +204,8 @@ cl_clock_correction_adjustment_max_offset                                       
 cl_clock_correction_adjustment_min_offset                                        : 10               : cheat                            : If the clock offset is less than this amount (in milliseconds), then no clock correction is applied.
 cl_clock_correction_force_server_tick                                            : 999              : cheat                            : Force clock correction to match the server tick + this offset (-999 disables it).
 cl_clockdrift_max_ticks                                                          : 3                : cheat                            : Maximum number of ticks the clock is allowed to drift before the client snaps its clock to the server's.
+cl_clutch_mode                                                                   : false            : cl, release                      : Silence voice and other distracting sounds until the end of round or next death.
 cl_color                                                                         : 2                : cl, a, user                      : Preferred teammate color
-cl_compass_enabled                                                               : true             : cl, a, release                   : 
 cl_connectionretrytime_p2p                                                       : 20               : release                          : Number of seconds over which to spread retry attempts for P2P.
 cl_cq_min_queue                                                                  : 0                : cl, user                         : Allows client to disable (=-1), defer to server (=0), or request a certain min-command queue size for games that support the command queue (IsUsingCommandQueue()) for CUserCmds.
 cl_crosshair_drawoutline                                                         : false            : cl, a, per_user                  : Draws a black outline around the crosshair for better visibility
@@ -260,7 +260,6 @@ cl_drawhud_force_teamid_overhead                                                
 cl_drawhud_specvote                                                              : true             : cl, release                      : 1: default; 0: disables vote UI for spectators
 cl_drawline                                                                      : cmd              : cl, cheat                        : Draws line between two 3D Points.  Green if no collision  Red is collides with something  Arguments: x1 y1 z1 x2 y2 z2
 cl_dumpentity                                                                    : cmd              : cl, cheat                        : Dumps info about an entity
-cl_dz_playagain_auto_spectate                                                    : false            : cl, a, release                   : Automatically switch to spectate mode after clicking the 'Play Again' button in end of match screen
 cl_embedded_stream_audio_volume                                                  : 60               : cl, a                            : Embedded stream audio volume
 cl_embedded_stream_audio_volume_xmaster                                          : true             : cl, a                            : Whether embedded stream audio volume gets multiplied by master volume
 cl_ent_absbox                                                                    : cmd              : cl, cheat                        : Displays the total bounding box for the given entity(s) in green.  Some entites will also display entity specific overlays.  Arguments:    {entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
@@ -361,7 +360,6 @@ cl_obs_interp_enable                                                            
 cl_obs_interp_pos_rate                                                           : 0.27             : cl, a                            : 
 cl_observed_bot_crosshair                                                        : 1                : cl, a, release                   : Control the crosshair shown when observing a bot. 0: Show player crosshair. 1: Show player crosshair only when bot can be taken over, otherwise show default.. 2: Always show default crosshair for bots.
 cl_paintkit_override                                                             : 0                : cl, cheat, release               : 
-cl_parachute_autodeploy                                                          : true             : cl, a, user, per_user, server_can_execute : Auto-deploy parachute if fall speed exceeds lethal limit
 cl_particle_retire_cost                                                          : 0                : cheat                            : 
 cl_particle_simulate                                                             : true             : cheat                            : Enables/Disables Particle Simulation
 cl_pclass                                                                        : 0                : cl, cheat                        : Dump entity by prediction classname.
@@ -381,7 +379,7 @@ cl_playerspray_auto_apply                                                       
 cl_playerspraydisable                                                            : false            : cl, a                            : Disable player sprays.
 cl_predict                                                                       : true             : cl, user, cheat                  : Perform client side prediction.
 cl_predictweapons                                                                : true             : cl, user                         : Perform client side prediction of weapon effects.
-cl_promoted_settings_acknowledged                                                : 1:1694702206272  : cl, a                            : 
+cl_promoted_settings_acknowledged                                                : 1:1695971405374  : cl, a                            : 
 cl_prop_debug                                                                    : cmd              : cl, cheat                        : Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1.
 cl_querycache_stats                                                              : cmd              : cl, cheat                        : Display status of the query cache (client only)
 cl_quickinventory_filename                                                       : radial_quickinventory.txt : cl, a, release                   : 
@@ -424,8 +422,8 @@ cl_radialmenu_deadzone_size_joystick                                            
 cl_ragdoll_limit                                                                 : 20               : cl, a                            : Maximum number of ragdolls to show (-1 disables limit)
 cl_ragdoll_lru_debug                                                             : false            : cl, rep, cheat                   : 
 cl_ragdoll_workaround_threshold                                                  : 4                : cl, release                      : Mainly cosmetic, client-only effect: when client doesn't know the last position of another player that spawns a ragdoll, the ragdoll creation is simplified and ragdoll is created in the right place. If you increase this significantly, ragdoll positions on your client may be dramatically wrong, but it won't affect other clients
-cl_rappel_tilt                                                                   : 0.35             : cl, release                      : 
 cl_rebuy                                                                         : Armor PrimaryWeapon Flashbang SmokeGrenade Defuser HEGrenade Flashbang SecondaryWeapon Molotov IncGrenade Decoy Taser : cl, release                      : The order in which rebuy will attempt to repurchase items
+cl_redemption_reset_timestamp                                                    : 0                : cl, a, release                   : 
 cl_removedecals                                                                  : cmd              : cl, cheat                        : Remove the decals from the entity under the crosshair.
 cl_resend                                                                        : 0.5              : release                          : Delay in seconds before the client will resend the 'connect' attempt
 cl_rr_reloadresponsesystems                                                      : cmd              : cl, cheat                        : Reload all response system scripts.
@@ -456,6 +454,7 @@ cl_script_trace_disable_key                                                     
 cl_script_trace_enable                                                           : cmd              : cl, cheat                        : Turn on a particular trace output by file or function name
 cl_script_trace_enable_all                                                       : cmd              : cl, cheat                        : Turn on all trace output
 cl_script_trace_enable_key                                                       : cmd              : cl, cheat                        : Turn on a particular trace output by table/instance
+cl_search_key_token                                                              : 0                : cl, release                      : Development search key token.
 cl_server_graphic1_enable                                                        : true             : cl, release                      : When enabled, 360x60 (<16kb) image file will be displayed to on-server spectators.
 cl_server_graphic2_enable                                                        : true             : cl, release                      : When enabled, 220x45 (<16kb) image file will be displayed to on-server spectators.
 cl_show_clan_in_death_notice                                                     : false            : cl, a, release                   : Is set, the clan name will show next to player names in the death notices.
@@ -484,7 +483,6 @@ cl_spec_stats                                                                   
 cl_spec_swapplayersides                                                          : false            : cl, release                      : Toggle set the player names and team names to the opposite side in which they are are on the spectator panel.
 cl_spec_use_tournament_content_standards                                         : false            : cl, release                      : 
 cl_spewserializers                                                               : cmd              : cheat                            : Spew serializers
-cl_tablet_mapmode                                                                : 1                : cl, a, release                   : 
 cl_teamid_overhead_colors_show                                                   : false            : cl, a, release                   : Show team overhead id in teammate color
 cl_teamid_overhead_maxdist                                                       : 6000             : cl, cheat, per_user              : max distance at which the overhead team id icons will show
 cl_teamid_overhead_maxdist_spec                                                  : 4000             : cl, cheat, per_user              : max distance at which the overhead team id icons will show when a spectator
@@ -526,7 +524,6 @@ confirm_activate_itemid_now                                                     
 confirm_join_friend_session_exit_current                                         : cmd              : cl, clientcmd_can_execute        : Confirm that we wish to join a friend session, destroying a previous session
 confirm_join_new_session_exit_current                                            : cmd              : cl, clientcmd_can_execute        : Confirm that we wish to join a new session, destroying a previous session
 confirm_join_party_session_exit_current                                          : cmd              : cl, clientcmd_can_execute        : Confirm that we wish to join a party session, destroying a previous session
-confirm_purchase_item_def_now                                                    : cmd              : cl, clientcmd_can_execute        : Confirm item purchase
 confirm_watch_friend_session_exit_current                                        : cmd              : cl, clientcmd_can_execute        : Confirm that we wish to watch a friend session, destroying a previous session
 connect                                                                          : cmd              : release                          : Connect to a remote server.
 connect_hltv                                                                     : cmd              : release                          : Connect to a remote HLTV server.
@@ -567,8 +564,7 @@ csgo_download_match                                                             
 csgo_econ_action_preview                                                         : cmd              : cl, norecord, clientcmd_can_execute : Preview an economy item
 csgo_fatdemo_enable                                                              : false            : sv, cl, rep, release             : 
 csgo_fatdemo_output                                                              : test.fatdem      : sv, cl, rep, release             : 
-csgo_map_preview_scale                                                           : 6.42971          : cl, a                            : 
-csgo_monitorgamma                                                                : 2.2              : cl, a                            : monitor gamma (typically 2.2 for CRT and 1.7 for LCD)
+csgo_map_preview_scale                                                           : 6.57971          : cl, a                            : 
 csgo_use_fullsort_for_opaque                                                     : true             : cl, cheat                        : fullsort the opaque pass when there wasn't a depth prepass
 csgo_video_settings_restore_previous                                             : cmd              : cl, release                      : csgo_video_settings_restore_previous
 csgo_watch_friend_session_exit_current                                           : cmd              : cl, clientcmd_can_execute        : 
@@ -626,6 +622,7 @@ demo_togglepause                                                                
 demolist                                                                         : cmd              : release                          : Print demo sequence list.
 demoui                                                                           : cmd              : cl, release                      : Show/hide demo playback ui
 dev_add_onground_on_spawn                                                        : false            : sv, release                      : Should we mess with the ground flag when we spawn? (I don't think we should). If we don't hit the assert in CCSPlayer_MovementServices::ProcessMovement, we should remove this by Dec 2022.
+developer                                                                        : 0                : release                          : Set developer message level.
 differences                                                                      : cmd              : release                          : Show all convars which are not at their default values (optional restricted to specific flags).
 disable_dynamic_prop_loading                                                     : false            : sv, cheat                        : If non-zero when a map loads, dynamic props won't be loaded
 disconnect                                                                       : cmd              : release                          : Disconnect from server
@@ -644,14 +641,13 @@ dump_entity_report                                                              
 dump_panorama_css_properties                                                     : cmd              : release                          : Prints out all valid panorama CSS properties and their documentation
 dump_panorama_events                                                             : cmd              : release                          : print panorama event types and their documentation
 dumpparticlelist                                                                 : cmd              : release                          : Print out information on existing particle systems
-dz_jointeam                                                                      : cmd              : sv                               : dz_jointeam team# [slot#|name] - Join DZ team N (0 to leave your team).  Server admins can assign other players to teams.
 echo                                                                             : cmd              : server_can_execute               : Echo text to console.
 echoln                                                                           : cmd              : release                          : Echo the command arguments on the console
 econ_item_icon_create                                                            : cmd              : cl, norecord, clientcmd_can_execute : Test: generate and resolve item icon texture
 enable_boneflex                                                                  : true             : cl, a                            : 
 endmatch_votenextmap                                                             : cmd              : cl, clientcmd_can_execute        : Votes for the next map at the end of the match
 endround                                                                         : cmd              : sv, cheat                        : End the current round.
-engine_low_latency_sleep_after_client_tick                                       : false            : release                          : When r_low_latency is enabled, this moves the low latency sleep on tick frames to happen after client simulation.
+engine_low_latency_sleep_after_client_tick                                       : true             : release                          : When r_low_latency is enabled, this moves the low latency sleep on tick frames to happen after client simulation.
 engine_no_focus_sleep                                                            : 30               : a                                : 
 english                                                                          : true             : cl, user                         : If set to 1, running the english language set of assets.
 ent_absbox                                                                       : cmd              : sv, cheat                        : Displays the total bounding box for the given entity(s) in green.  Some entites will also display entity specific overlays.  Arguments:    {entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
@@ -854,7 +850,7 @@ inferno_velocity_normal_factor                                                  
 input_button_code_is_scan_code                                                   : true             : a                                : Bind keys based on keyboard position instead of key name
 input_filter_relative_analog_inputs                                              : false            : cl, a                            : 
 input_forceuser                                                                  : -1               : cheat                            : Force user input to this split screen player.
-install_dlc_workshoptools_cvar                                                   : -1               : cl, release                      : DLC Install Status
+install_dlc_workshoptools_cvar                                                   : 0                : cl, release                      : DLC Install Status
 invnext                                                                          : cmd              : cl, server_can_execute           : 
 invnextselect                                                                    : cmd              : cl, server_can_execute           : 
 invprev                                                                          : cmd              : cl, server_can_execute           : 
@@ -919,11 +915,11 @@ lb_shadow_map_culling                                                           
 lb_show_light_fog_clipmap_cb_cost                                                : false            : cheat                            : Show cost of lights in fog clipmap constant buffer. yellow = 1 cost, red = 6 cost
 lightquery_debug_direct_lighting                                                 : true             : sv, cl, rep, cheat               : 
 lightquery_debug_indirect_lighting                                               : true             : sv, cl, rep, cheat               : 
-lightquery_debug_indirect_lighting_fast                                          : 0                : sv, cl, rep, cheat               : 0 = standard sampling, 1 = fast sampling, 2 = ultra-fast sampling
 listdemo                                                                         : cmd              : release                          : List demo file contents.
 listissues                                                                       : cmd              : sv                               : List all the issues that can be voted on.
 lobby_default_privacy_bits2                                                      : 0                : cl, a, release                   : Lobby default permissions (0: private, 1: public)
 lockMoveControllerRet                                                            : false            : cl, a                            : 
+log                                                                              : cmd              : release                          : Enables logging to file, console, and udp < on | off >.
 log_color                                                                        : cmd              : norecord, release                : Set the color of a logging channel.
 log_dumpchannels                                                                 : cmd              : norecord, release                : Dumps information about all logging channels.
 log_flags                                                                        : cmd              : norecord, release                : Set the flags on a logging channel.
@@ -956,7 +952,7 @@ mat_shading_complexity                                                          
 mat_shading_complexity_color                                                     : 1.000000 0.500000 0.250000 : cheat                            : 
 mat_shading_complexity_max_instruction_count                                     : 1024             : cheat                            : 
 mat_shading_complexity_max_register_count                                        : 128              : cheat                            : 
-mat_show_distance_field                                                          : false            : cheat                            : 
+mat_show_distance_field                                                          : 0                : cheat                            : 0=Off, 1=Visualize trace from camera, 2=Visualize occlusion
 mat_tonemap_bloom_scale                                                          : -1               : cheat                            : 
 mat_tonemap_bloom_start_value                                                    : -1               : cheat                            : 
 mat_tonemap_force_accelerate_exposure_down                                       : -1               : cheat                            : 
@@ -1062,14 +1058,13 @@ mp_dm_time_between_bonus_min                                                    
 mp_dogtag_despawn_on_killer_death                                                : true             : sv, rep, release                 : Whether dogtags should despawn when their killer dies
 mp_dogtag_despawn_time                                                           : 120              : sv, rep, release                 : How many seconds dogtags should stay around before despawning automatically (0 = infinite)
 mp_dogtag_pickup_rule                                                            : 0                : sv, rep, release                 : Who is eligible to pick up a dogtag (0 = killer only, 1 = killer's team, 2 = victim's team, 3 = killer & victim's team, 4 = anyone)
-mp_dronegun_stop                                                                 : false            : sv, cl, rep, release             : if non-zero, stops AI on all droneguns.
 mp_drop_grenade_enable                                                           : true             : sv, cl, rep, release             : Allows players to drop grenades.
 mp_drop_knife_enable                                                             : false            : sv, cl, rep, release             : Allows players to drop knives.
 mp_economy_reset_rounds                                                          : 0                : sv, cl, rep, release             : Reset all player money every N rounds (0 for never)
 mp_endmatch_votenextleveltime                                                    : 20               : sv, release                      : If mp_endmatch_votenextmap is set, players have this much time to vote on the next map at match end.
 mp_endmatch_votenextmap                                                          : true             : sv, cl, rep, release             : Whether or not players vote for the next map at the end of the match when the final scoreboard comes up
 mp_endmatch_votenextmap_keepcurrent                                              : true             : sv, cl, rep, release             : If set, keeps the current map in the list of voting options.  If not set, the current map will not appear in the list of voting options.
-mp_endmatch_votenextmap_wargames_modes                                           : armsrace         : sv, release                      : Modes available for endmatch voting during War Games. Separate names with spaces.
+mp_endmatch_votenextmap_wargames_modes                                           : 0                : sv, release                      : Modes available for endmatch voting during War Games. Separate names with spaces.
 mp_endmatch_votenextmap_wargames_nummaps                                         : 3                : sv, release                      : Maximum number of maps to include in endmatch voting during War Games
 mp_endmatch_votenextmap_wargames_nummodes                                        : 1                : sv, release                      : Maximum number of other War Games to include in endmatch voting during War Games
 mp_endwarmup_player_count                                                        : 0                : sv, cl, rep, release             : Number of players required to be connected to end warmup early. 0 to require maximum players for mode.
@@ -1082,21 +1077,6 @@ mp_fraglimit                                                                    
 mp_free_armor                                                                    : 0                : sv, cl, rep, release             : Determines whether kevlar (1+) and/or helmet (2+) are given automatically.
 mp_freezetime                                                                    : 15               : sv, nf, rep, release             : how many seconds to keep players frozen when the round starts
 mp_friendlyfire                                                                  : true             : sv, cl, nf, rep, release         : Allows team members to injure other members of their team
-mp_ggprogressive_healthshot_killcount                                            : 3                : sv, cl, rep, release             : Grant healthshots in arms race after n kills
-mp_ggprogressive_random_weapon_kills_needed                                      : 2                : sv, cl, rep, release             : If mp_ggprogressive_use_random_weapons is set, this is the number of kills needed with each weapon
-mp_ggprogressive_round_restart_delay                                             : 15               : sv, cl, rep, release             : Number of seconds to delay before restarting a round after a win in gungame progessive
-mp_ggprogressive_use_random_weapons                                              : true             : sv, cl, rep, release             : If set, selects random weapons from set categories for the progression order
-mp_ggtr_always_upgrade                                                           : false            : sv, cl, rep, release             : Award this many upgrade points every round in demolition mode
-mp_ggtr_bomb_defuse_bonus                                                        : 1                : sv, cl, rep, release             : Number of bonus upgrades to award the CTs when they defuse a gun game bomb
-mp_ggtr_bomb_detonation_bonus                                                    : 1                : sv, cl, rep, release             : Number of bonus upgrades to award the Ts when they detonate a gun game bomb
-mp_ggtr_bomb_pts_for_flash                                                       : 4                : sv, cl, rep, release             : Kill points required in a round to get a bonus flash grenade
-mp_ggtr_bomb_pts_for_he                                                          : 3                : sv, cl, rep, release             : Kill points required in a round to get a bonus HE grenade
-mp_ggtr_bomb_pts_for_molotov                                                     : 5                : sv, cl, rep, release             : Kill points required in a round to get a bonus molotov cocktail
-mp_ggtr_bomb_pts_for_upgrade                                                     : 2                : sv, cl, rep, release             : Kill points required to upgrade a player's weapon
-mp_ggtr_bomb_respawn_delay                                                       : 0                : sv, cl, rep, release             : Number of seconds to delay before making the bomb available to a respawner in gun game
-mp_ggtr_end_round_kill_bonus                                                     : 1                : sv, cl, rep, release             : Number of bonus points awarded in Demolition Mode when knife kill ends round
-mp_ggtr_last_weapon_kill_ends_half                                               : false            : sv, cl, rep, release             : End the half and give a team round point when a player makes a kill using the final weapon
-mp_ggtr_num_rounds_autoprogress                                                  : 3                : sv, cl, rep, release             : Upgrade the player's weapon after this number of rounds without upgrading
 mp_give_player_c4                                                                : true             : sv, cl, rep, release             : Whether this map should spawn a c4 bomb for a player or not.
 mp_global_damage_per_second                                                      : 0                : sv, rep, release                 : If above 0, deal non-lethal damage to players over time.
 mp_guardian_ai_bt_difficulty_adjust_wave_interval                                : 1                : sv, rep, release                 : Adjust the guardian bots' difficulty every nth guardian wave when using behavior trees.
@@ -1393,7 +1373,9 @@ nav_obstacle_validate                                                           
 nav_obstruction_draw                                                             : 0                : sv, cheat                        : 
 nav_obstruction_draw_change                                                      : false            : sv, cheat                        : 
 nav_obstruction_draw_dist                                                        : -1               : sv, cheat                        : 
-nav_obstruction_draw_fail_block                                                  : false            : sv, cheat                        : 
+nav_obstruction_draw_island                                                      : 0                : sv, cheat                        : 
+nav_obstruction_draw_island_hull                                                 : -1               : sv, cheat                        : 
+nav_obstruction_draw_movefail_blocking                                           : false            : sv, cheat                        : 
 nav_path_debug                                                                   : false            : sv, cheat                        : 
 nav_path_debug_compute_with_open_goal                                            : 0                : sv, cheat                        : 
 nav_path_draw_areas                                                              : false            : sv, cheat                        : 
@@ -1553,9 +1535,11 @@ navspace_draw_water_changes                                                     
 navspace_path_use_water_level_locator                                            : true             : sv, cheat                        : 
 net_allow_multicast                                                              : true             : a, release                       : 
 net_client_steamdatagram_enable_override                                         : 1                : cl, release                      : 0: Use connect method requested by GC.  >0: Always use SDR if possible.  <0: Always use direct UDP if possible
+net_fakelag                                                                      : cmd              : release                          : Shorthand for 'net_option FakePacketLag_Recv'
 net_listallmessages                                                              : cmd              : cheat                            : List all registered net messages
 net_maxroutable                                                                  : 1200             : a, user                          : Requested max packet size before packets are 'split'.
 net_messageinfo                                                                  : cmd              : cheat                            : Display info about a message (by classname or id)
+net_option                                                                       : cmd              : release                          : Get or set SteamNetworkingSockets options such as fake packet lag and loss
 net_public_adr                                                                   : 0                : release                          : For servers behind NAT/DHCP meant to be exposed to the public internet, this is the public facing ip address string: ('x.x.x.x' )
 net_showudp                                                                      : false            : release                          : Dump UDP packets summary to console
 net_showudp_remoteonly                                                           : true             : release                          : Dump non-loopback udp only
@@ -1569,7 +1553,7 @@ noclip_fixup                                                                    
 notarget                                                                         : cmd              : sv, cheat                        : Toggle. Player becomes hidden to NPCs.
 option_duck_method                                                               : false            : cl, a, user, per_user            : Input toggle control
 option_speed_method                                                              : false            : cl, a, user, per_user            : Input toggle control
-panorama_console_position_and_size                                               : 20.00|20.00|1000.00|800.00 : cl, a                            : 
+panorama_console_position_and_size                                               : 24.00|101.00|1157.00|832.00 : cl, a                            : 
 panorama_debug_overlay_opacity                                                   : 0.25             : a                                : 
 panorama_debug_overlay_opacity_max                                               : 0.25             : a                                : 
 panorama_debug_overlay_opacity_min                                               : 0.01             : a                                : 
@@ -1604,8 +1588,8 @@ play                                                                            
 playdemo                                                                         : cmd              : release                          : Play a recorded demo file (.dem ).
 player0_using_joystick                                                           : false            : a                                : 
 player_botdifflast_s                                                             : 2                : cl, a, release                   : 
-player_competitive_maplist_2v2_10_0_0                                            : 0                : cl, a                            : 
-player_competitive_maplist_8_10_0_5069769                                        : mg_de_dust2,mg_de_ancient,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_de_anubis,mg_lobby_mapveto,mg_de_overpass : cl, a                            : 
+player_competitive_maplist_2v2_10_0_C8D88986                                     : mg_de_overpass,mg_de_vertigo,mg_de_inferno,mg_de_nuke : cl, a                            : 
+player_competitive_maplist_8_10_0_5069769                                        : mg_de_mirage,mg_de_overpass,mg_de_vertigo,mg_de_ancient,mg_de_inferno,mg_de_nuke,mg_de_anubis,mg_de_dust2,mg_cs_office : cl, a                            : 
 player_debug_off_nav                                                             : false            : sv, cheat                        : 
 player_debug_print_damage                                                        : false            : sv, cheat                        : When true, print amount and type of all damage received by player to console.
 player_nevershow_communityservermessage                                          : 1                : cl, a, per_user                  : 
@@ -1614,7 +1598,7 @@ player_ping_token_cooldown                                                      
 player_survival_list_10_0_303                                                    : mg_dz_blacksite,mg_dz_sirocco,mg_dz_vineyard,mg_dz_ember : cl, a                            : 
 player_teamplayedlast                                                            : 3                : cl, a, per_user                  : 
 player_use_radius                                                                : 80               : sv, cl, rep, cheat               : 
-player_wargames_list2_10_0_DC207394                                              : mg_skirmish_armsrace : cl, a                            : 
+player_wargames_list2_10_0_0                                                     : 0                : cl, a                            : 
 playsoundscape                                                                   : cmd              : cl, cheat                        : Forces a soundscape to play
 print_mapgroup                                                                   : cmd              : cl, release                      : Prints the current mapgroup and the contained maps
 print_mapgroup_sv                                                                : cmd              : sv, release                      : Prints the current mapgroup and the contained maps
@@ -1650,7 +1634,6 @@ r_csgo_effects_bloom                                                            
 r_csgo_effects_bloom_when_smoked                                                 : false            : cl, cheat                        : 
 r_csgo_enable_glows                                                              : true             : cl, cheat                        : 
 r_csgo_enable_high_precision_lighting                                            : true             : cl, cheat                        : 
-r_csgo_enable_outlines                                                           : true             : cl, cheat                        : 
 r_csgo_enable_tonemapping                                                        : true             : cl, cheat                        : 
 r_csgo_enable_translucent_screen_space                                           : true             : cl, cheat                        : 
 r_csgo_mboit                                                                     : true             : cl, cheat                        : 
@@ -1741,14 +1724,6 @@ r_force_no_present                                                              
 r_force_zprepass                                                                 : -1               : cheat                            : 0: Force z prepass off. 1: Force on. -1: Don't force
 r_freezeparticles                                                                : false            : cheat                            : Pause particle simulation
 r_fullscreen_gamma                                                               : 2.2              : a                                : Screen Gamma (only in fullscreen modes)
-r_icon_blocking_map_load                                                         : false            : cl, cheat                        : use blocking map load
-r_icon_custommaterial_maxres                                                     : 512              : cl, cheat                        : maxres for custommaterials when rendering icons
-r_icon_player_equip_gloves_from_loadout                                          : true             : cl, cheat                        : equip gloves on player for icon rendering from loadout, or use default gloves
-r_icon_rendering_height                                                          : 384              : cl, cheat                        : icon rendering height
-r_icon_rendering_msaa_mode                                                       : 2                : cl, cheat                        : MSAA mode used for icon rendering 0-none, 1-2xMSAA, 2-4xMSAA
-r_icon_rendering_width                                                           : 512              : cl, cheat                        : icon rendering width
-r_icon_show_timing                                                               : false            : cl, cheat                        : show timing in output
-r_icon_use_kv3_camera                                                            : false            : cl, cheat                        : use test kv3 data for camera
 r_indirectlighting                                                               : true             : cheat                            : Set to use indirect lighting
 r_JeepViewDampenDamp                                                             : 1                : sv, cl, nf, rep, cheat           : 
 r_JeepViewDampenFreq                                                             : 7                : sv, cl, nf, rep, cheat           : 
@@ -1777,6 +1752,7 @@ r_render_world_node_bounds                                                      
 r_rendersun                                                                      : true             : cheat                            : Render sun lighting
 r_replay_post_effect                                                             : -1               : cl, cheat                        : 
 r_shadows                                                                        : true             : cheat                            : 
+r_show_build_info                                                                : true             : cl, a, release                   : Build information. Leave this enabled when submitting bug screenshots and videos, please!
 r_show_hipoly_draw_calls                                                         : 0                : cheat                            : Transparent wireframe overlay for draw calls with triangle count higher than specified number
 r_showdebugoverlays                                                              : false            : cheat                            : Set to render debug overlays
 r_showdebugrendertarget                                                          : false            : cheat                            : Set the debug render target to show, 0 == disable
@@ -1896,6 +1872,7 @@ script_trace_disable_key                                                        
 script_trace_enable                                                              : cmd              : sv, cheat                        : Turn on a particular trace output by file or function name
 script_trace_enable_all                                                          : cmd              : sv, cheat                        : Turn on all trace output
 script_trace_enable_key                                                          : cmd              : sv, cheat                        : Turn on a particular trace output by table/instance
+sdr                                                                              : cmd              : release                          : An old command that has been renamed to 'net_option'
 send_round_backup_file_list                                                      : cmd              : sv, release                      : 
 sensitivity                                                                      : 1.9              : cl, a, per_user                  : Mouse sensitivity.
 server_snd_cast                                                                  : cmd              : sv, cheat                        : Casts a ray and starts a sound event where the ray hits. The sound event will retrigger periodically. Usage: snd_cast <eventname> [<retrigger time>] [<max distance>]. Arguments that are specified will become defaults for the remainder of the session.
@@ -1979,11 +1956,10 @@ snd_list_soundevents_by_stack                                                   
 snd_mainmenu_music_break_time_max                                                : 0                : cl, cheat                        : Maximum amount of time to pause between playing main menu music
 snd_mainmenu_music_break_time_min                                                : 0                : cl, cheat                        : Minimum amount of time to pause between playing main menu music
 snd_mapobjective_volume                                                          : 0                : cl, a, release                   : Volume of Map Objective Music
-snd_menumusic_volume                                                             : 0                : cl, a, release                   : Volume of Menu / Non-gameplay music
+snd_menumusic_volume                                                             : 0.124666         : cl, a, release                   : Volume of Menu / Non-gameplay music
 snd_mixahead                                                                     : 0.001            : a                                : 
 snd_mixer_master_dsp                                                             : 1                : cheat                            : 
 snd_mixer_master_level                                                           : 1                : cheat                            : 
-snd_music_selection                                                              : 0                : cl, a                            : Tracking rotating music for players with no music packs equipped.
 snd_musicvolume                                                                  : 1                : a                                : Music volume
 snd_mute_losefocus                                                               : true             : a                                : 
 snd_mute_mvp_music_live_players                                                  : true             : cl, a, release                   : If set, MVP music is muted if players from both teams are still alive.
@@ -2077,8 +2053,9 @@ snd_sound_areas_debug_interval                                                  
 snd_soundevent_clear_deferred                                                    : cmd              : cheat                            : Clear the list of deferred soundevents for loading.
 snd_soundmixer_set_trigger_factor                                                : cmd              : cheat                            : Set named mix layer / mix group, trigger amount.
 snd_soundmixer_setmixlayer_amount                                                : cmd              : cheat                            : Set named mix layer mix amount.
-snd_spatialize_lerp                                                              : 0.3              : rep, cheat                       : 
-snd_steamaudio_enable_pathing                                                    : false            : cheat                            : This variable is checked by soundstack to globally enabling pathing for audio processing.
+snd_spatialize_lerp                                                              : 0                : a, release                       : 
+snd_steamaudio_enable_pathing                                                    : true             : cheat                            : This variable is checked by soundstack to globally enabling pathing for audio processing.
+snd_steamaudio_enable_perspective_correction                                     : true             : a, release                       : Enable perspective correction for 3D audio.
 snd_steamaudio_enable_reverb                                                     : 0                : release                          : Enable Steam Audio Reverb processor.
 snd_steamaudio_enable_spatial_blend_fix                                          : cmd              : cheat                            : Toggles the speculative fix for low-frequency issues when using spatial blend.
 snd_steamaudio_export_scene                                                      : cmd              : cheat                            : Exports scene currently used by Steam Audio as a phononscene file.
@@ -2098,10 +2075,11 @@ snd_steamaudio_reverb_level_db                                                  
 snd_steamaudio_source_pathing_debug                                              : false            : a                                : Enable path visualization for steam_audio_source operator.
 snd_tensecondwarning_volume                                                      : 0.1              : cl, a, release                   : Volume of Ten Second Warnings
 snd_toolvolume                                                                   : 0.3              : a                                : Volume of sounds in tools (e.g. Hammer, SFM)
+snd_use_baked_occlusion                                                          : 0                : rep, cheat, release              : 
 snd_vmidi_flush                                                                  : cmd              : cheat                            : Purge and reload all vmidi data and files.
 snd_vmix_override_mix_decay_time                                                 : -1               : cheat                            : If set > 0, overrides how long the decay time is on all mix graphs (in seconds). 
 snd_vmix_show_input_updates                                                      : false            : cheat                            : If set to 1, show all incoming updates to vmix inputs. 
-snd_voipvolume                                                                   : 1                : a                                : Voice volume
+snd_voipvolume                                                                   : 0.1              : a                                : Voice volume
 sound_device_override                                                            : 0                : a, release                       : ID of the sound device to use
 soundinfo                                                                        : cmd              : release                          : Describe the current sound device with an active voice list.
 soundscape_debug                                                                 : false            : sv, cheat                        : When on, draws lines to all env_soundscape entities. Green lines show the active soundscape, red lines show soundscapes that aren't in range, and white lines show soundscapes that are in range, but not the active soundscape.
@@ -2115,7 +2093,6 @@ spawn_group_unload                                                              
 speaker_config                                                                   : -1               : a                                : 
 spec_autodirector                                                                : false            : cl, clientcmd_can_execute        : Auto-director chooses best view modes while spectating
 spec_centerchasecam                                                              : false            : cl, a                            : Looks at the target player's center, instead of his eye position, in chase came mode
-spec_dz_group_teams                                                              : true             : cl, release                      : If set, will group players into their teams for spectating, if 0, spectating numbers will be the default individual players
 spec_freeze_deathanim_time                                                       : 0.8              : sv, cl, rep, release             : The time that the death cam will spend watching the player's ragdoll before going into the freeze death cam.
 spec_freeze_time                                                                 : 2                : sv, cl, rep, release             : Time spend frozen in observer freeze cam.
 spec_freeze_time_lock                                                            : 1                : sv, cl, rep, release             : Time players are prevented from skipping the freeze cam
@@ -2168,7 +2145,7 @@ sv_allchat                                                                      
 sv_allow_votes                                                                   : true             : sv, release                      : Allow voting?
 sv_alltalk                                                                       : false            : sv, nf, release                  : Players can hear all other players' voice communication, no team restrictions
 sv_alternateticks                                                                : false            : sp, release                      : If set, server only simulates entities on even numbered ticks. 
-sv_arms_race_vote_to_restart_disallowed_after                                    : 0                : sv, rep, release                 : Arms Race gun level after which vote to restart is disallowed
+sv_always_play_damage_headshot_feedback                                          : true             : sv, release                      : If true, we always play damage headshot feedback, even through smokes and objects.
 sv_auto_adjust_bot_difficulty                                                    : true             : sv, release                      : Adjust the difficulty of bots each round based on contribution score.
 sv_auto_full_alltalk_during_warmup_half_end                                      : false            : sv, release                      : When enabled will automatically turn on full all talk mode in warmup, at halftime and at the end of the match
 sv_autobunnyhopping                                                              : false            : sv, cl, rep, release             : Players automatically re-jump while holding jump button
@@ -2184,15 +2161,6 @@ sv_bot_buy_smoke_weight                                                         
 sv_bots_get_easier_each_win                                                      : 0                : sv, release                      : If > 0, some # of bots will lower thier difficulty each time they win. The argument defines how many will lower their difficulty each time.
 sv_bots_get_harder_after_each_wave                                               : 0                : sv, release                      : If > 0, some # of bots will raise thier difficulty each time CTs beat a Guardian wave. The argument defines how many will raise their difficulty each time
 sv_bounce                                                                        : 0                : sv, cl, nf, rep, release         : Bounce multiplier for when physically simulated objects collide with other objects.
-sv_breachcharge_arm_delay                                                        : 0.3              : sv, release                      : 
-sv_breachcharge_delay_max                                                        : 0.8              : sv, release                      : 
-sv_breachcharge_delay_min                                                        : 0                : sv, release                      : 
-sv_breachcharge_distance_max                                                     : 1200             : sv, release                      : 
-sv_breachcharge_distance_min                                                     : 600              : sv, release                      : 
-sv_breachcharge_fuse_max                                                         : 1                : sv, release                      : 
-sv_breachcharge_fuse_min                                                         : 0.7              : sv, release                      : 
-sv_bumpmine_arm_delay                                                            : 0.3              : sv, release                      : 
-sv_bumpmine_detonate_delay                                                       : 0.25             : sv, release                      : 
 sv_buy_status_override                                                           : -1               : sv, rep, release                 : Override for buy status map info. 0 = everyone can buy, 1 = ct only, 2 = t only 3 = nobody
 sv_chat_proximity                                                                : -1               : sv, cl, rep, release             : 
 sv_cheats                                                                        : false            : nf, rep, release                 : Allow cheats on server
@@ -2207,29 +2175,14 @@ sv_debug_overlays_broadcast                                                     
 sv_disable_immunity_alpha                                                        : false            : sv, cl, rep, release             : If set, clients won't slam the player model render settings each frame for immunity [mod authors use this]
 sv_disable_observer_interpolation                                                : false            : sv, cl, rep, release             : Disallow interpolating between observer targets on this server.
 sv_disable_radar                                                                 : 0                : sv, cl, rep, release             : 0: regular radar; 1: always disabled; 2: disabled in warmup
+sv_disable_teamselect_menu                                                       : false            : sv, cl, rep, release             : Disable teamselect menu on clients
 sv_disconnected_player_data_hold_time                                            : 60               : sv, cl, rep, release             : Duration, in seconds, to hold onto the data of disconnected players, for scoreboard display.
+sv_distance_guaranteed_damage_feedback                                           : 1070             : sv, release                      : Attacks made within this radius are guaranteed to generate damage feedback sounds.
 sv_dz_cash_bundle_size                                                           : 50               : sv, rep, release                 : Size of a cash bundle
 sv_dz_cash_mega_bundle_size                                                      : 13               : sv, rep, release                 : Size of a mega cash bundle
 sv_dz_contractkill_reward                                                        : 10               : sv, rep, release                 : Cash bundles to award for a successful contract kill
-sv_dz_enable_respawn                                                             : true             : sv, cl, rep, release             : 
-sv_dz_enable_respawn_solos                                                       : false            : sv, cl, rep, release             : 
-sv_dz_exploration_payment_amount                                                 : 2                : sv, rep, release                 : Number of cash bundles to award for exploring a new sector
-sv_dz_exploration_payment_amount_bonus                                           : 2                : sv, rep, release                 : Number of BONUS cash bundles to award for exploring (if the player has the item/upgrade)
-sv_dz_force_zone                                                                 : false            : sv, cl, rep, cheat               : 
 sv_dz_hostage_rescue_reward                                                      : 18               : sv, cl, rep, release             : Number of cash bundles to award for rescuing a hostage
-sv_dz_jointeam_allowed                                                           : false            : sv, release                      : Whether non-server admins are allowed to use the dz_jointeam command
-sv_dz_parachute_reuse                                                            : true             : sv, rep, release                 : 
-sv_dz_player_max_health                                                          : 120              : sv, release                      : 
-sv_dz_player_spawn_armor                                                         : 0                : sv, release                      : 
-sv_dz_player_spawn_health                                                        : 120              : sv, release                      : 
-sv_dz_show_enemy_name_scope_range                                                : 800              : sv, release                      : 
 sv_dz_squad_wipe_reward                                                          : 2                : sv, cl, rep, release             : Number of cash bundles to award for eliminating a squad
-sv_dz_team_count                                                                 : 1                : sv, cl, rep, release             : Max players allowed per team
-sv_dz_warmup_tablet                                                              : true             : sv, release                      : 
-sv_dz_zone_bombdrop_money_reward                                                 : 15               : sv, cl, rep, release             : How many money stacks players are rewarded each danger zone wave
-sv_dz_zone_bombdrop_money_reward_bonus                                           : 5                : sv, cl, rep, release             : How many bonus money stacks players are rewarded each danger zone wave when they have the bonus item
-sv_dz_zone_damage                                                                : true             : sv, cheat, release               : 
-sv_dz_zone_hex_radius                                                            : 2200             : sv, cl, rep, release             : 
 sv_enable_alternate_baselines                                                    : 1                : release                          : Allow alternate baseline system, set to 2 for debugging spew.
 sv_enable_delta_packing                                                          : true             : release                          : When enabled, this allows for entity packing to use the property changes for building up the data. This is many times faster, but can be disabled for error checking.
 sv_enablebunnyhopping                                                            : false            : sv, cl, rep, release             : Allow player speed to exceed maximum running speed
@@ -2240,15 +2193,11 @@ sv_fade_player_visibility_farz                                                  
 sv_falldamage_scale                                                              : 1                : sv, cl, rep, release             : 
 sv_falldamage_to_below_player_multiplier                                         : 1                : sv, cl, rep, release             : Scale damage when distributed across two players
 sv_falldamage_to_below_player_ratio                                              : 0                : sv, cl, rep, release             : Landing on a another player's head gives them this ratio of the damage.
-sv_force_reflections                                                             : false            : sv, cl, rep, release             : 
 sv_friction                                                                      : 5.2              : sv, cl, nf, rep, release         : World friction.
 sv_full_alltalk                                                                  : false            : sv, cl, rep, release             : Any player (including Spectator team) can speak to any other player
 sv_game_mode_flags                                                               : 0                : sv, release                      : Dedicated server game mode flags to run
 sv_gameinstructor_disable                                                        : false            : sv, cl, rep, release             : Force all clients to disable their game instructors.
 sv_gameinstructor_enable                                                         : false            : cl, rep, release                 : Force all clients to enable their game instructors.
-sv_ggprogressive_autosniper_first                                                : true             : sv, release                      : Should auto snipers go first or regular snipers?
-sv_ggprogressive_shotgun_last                                                    : true             : sv, release                      : Should auto snipers go first or regular snipers?
-sv_grassburn                                                                     : false            : sv, cl, rep, release             : 
 sv_gravity                                                                       : 800              : sv, cl, nf, rep, release         : World gravity.
 sv_grenade_trajectory_prac_pipreview                                             : false            : sv, cl, rep, release             : Shows grenade trajectory practice picture-in-picture preview.
 sv_grenade_trajectory_prac_trailtime                                             : 0                : sv, cl, rep, release             : Shows grenade trajectory practice visualization for this number of seconds.
@@ -2276,6 +2225,8 @@ sv_hide_roundtime_until_seconds                                                 
 sv_highlight_distance                                                            : 500              : sv, cl, rep, release             : 
 sv_highlight_duration                                                            : 3.5              : sv, cl, rep, release             : 
 sv_holiday_mode                                                                  : 0                : sv, cl, rep, release             : 0 = OFF, 1 = Halloween, 2 = Winter
+sv_hoststate_quit_syscall                                                        : false            : release                          : When enabled, game server will quit immediately via syscall instead of running host states shutdown sequence
+sv_human_autojoin_team                                                           : 0                : sv, cl, rep, release             : Force human players on to a team. 0 to disable.
 sv_ignoregrenaderadio                                                            : false            : sv, release                      : Turn off Fire in the hole messages
 sv_infinite_ammo                                                                 : 0                : sv, cl, rep, cheat, release      : Player's active weapon will never run out of ammo
 sv_invites_only_mainmenu                                                         : false            : sv, cl, rep, release             : If turned on, will ignore all invites when user is playing a match
@@ -2291,13 +2242,13 @@ sv_lan                                                                          
 sv_lightquery_debug                                                              : false            : sv, cheat                        : 
 sv_load_forced_client_names_file                                                 : cmd              : sv, release                      : Loads a file containing SteamID64 names for clients
 sv_load_random_client_names_file                                                 : cmd              : sv, release                      : Loads a file containing random name words for clients
-sv_log_onefile                                                                   : false            : a                                : Log server information to only one file.
-sv_logbans                                                                       : false            : a                                : Log server bans in the server logs.
+sv_log_onefile                                                                   : false            : a, release                       : Log server information to only one file.
+sv_logbans                                                                       : false            : a, release                       : Log server bans in the server logs.
 sv_logblocks                                                                     : false            : release                          : If true when log when a query is blocked (can cause very large log files)
-sv_logecho                                                                       : true             : a                                : Echo log information to the console.
-sv_logfile                                                                       : false            : a                                : Log server information in the log file.
-sv_logflush                                                                      : false            : a                                : Flush the log file to disk on each write (slow).
-sv_logsdir                                                                       : logs             : a                                : Folder in the game directory where server logs will be stored.
+sv_logecho                                                                       : true             : a, release                       : Echo log information to the console.
+sv_logfile                                                                       : false            : a, release                       : Log server information in the log file.
+sv_logflush                                                                      : false            : a, release                       : Flush the log file to disk on each write (slow).
+sv_logsdir                                                                       : logs             : a, release                       : Folder in the game directory where server logs will be stored.
 sv_mapvetopickvote_maps                                                          : de_anubis,de_inferno,de_mirage,de_vertigo,de_overpass,de_nuke,de_ancient : sv, release                      : Which maps are used for map veto pick sequence
 sv_mapvetopickvote_phase_duration                                                : [1:5][2:15][3:20][4:10][5:10][6:5] : sv, release                      : How many seconds each phase lasts
 sv_mapvetopickvote_rnd                                                           : false            : sv, release                      : When enabled will shuffle veto pick maps list order every time
@@ -2335,7 +2286,6 @@ sv_phys_debug_callback_entities                                                 
 sv_phys_enabled                                                                  : true             : sv, cheat                        : Enable all physics simulation
 sv_phys_sleep_enable                                                             : true             : sv, cheat                        : Enable sleeping for dynamic physics bodies.
 sv_phys_stop_at_collision                                                        : 0                : sv, cheat                        : 
-sv_player_parachute_velocity                                                     : -200             : sv, rep, release                 : 
 sv_playerradio_use_allowlist                                                     : true             : sv, release                      : playerradio commands may only use responses from an allow list of commands.
 sv_prime_accounts_only                                                           : false            : sv, release                      : When this setting is enabled only prime users can connect to this game server.
 sv_pure                                                                          : cmd              : release                          : Show user data.
@@ -2381,8 +2331,6 @@ sv_skyname                                                                      
 sv_snapshot_unlimited                                                            : false            : rep, release                     : For debugging, don't throw away old snapshots so that if you break in debugger (on remote client or server) it won't require an uncompressed update to resume.  You may run out of memory of course...
 sv_soundscape_printdebuginfo                                                     : cmd              : sv, cheat                        : print soundscapes
 sv_spawn_afk_bomb_drop_time                                                      : 15               : sv, rep, release                 : Players that have never moved since they spawned will drop the bomb after this amount of time.
-sv_spawn_rappel_min_duration                                                     : 8                : sv, rep, release                 : 
-sv_spawn_rappel_min_duration_with_chute                                          : 2.5              : sv, rep, release                 : 
 sv_spec_hear                                                                     : 1                : sv, cl, nf, rep, release         : Determines who spectators can hear: 0: only spectators; 1: all players; 2: spectated team; 3: self only; 4: nobody
 sv_spec_use_tournament_content_standards                                         : false            : sv, cl, rep, release             : 
 sv_specaccelerate                                                                : 5                : sv, cl, a, nf, rep               : 
@@ -2397,7 +2345,6 @@ sv_steamgroup                                                                   
 sv_steamgroup_exclusive                                                          : false            : release                          : If set, only members of Steam group will be able to join the server when it's empty, public people will be able to join the server only if it has players.
 sv_stopspeed                                                                     : 80               : sv, cl, nf, rep, release         : Minimum stopping speed when on ground.
 sv_stressbots                                                                    : false            : release                          : If set to 1, the server calculates data and fills packets to bots. Used for perf testing.
-sv_tablet_show_path_to_nearest_resq                                              : false            : sv, cl, rep, release             : 
 sv_tags                                                                          : 0                : nf, release                      : Server tags. Used to provide extra information to clients when they're browsing for servers. Separate tags with a comma.
 sv_talk_after_dying_time                                                         : 0                : sv, cl, rep, release             : The number of seconds a player can continue talking after dying as if they were still alive
 sv_talk_enemy_dead                                                               : false            : sv, cl, rep, release             : Dead players can hear all dead enemy communication (voice, chat)
@@ -2407,7 +2354,6 @@ sv_teamid_overhead_always_prohibit                                              
 sv_teamid_overhead_maxdist                                                       : 0                : sv, cl, rep, release             : If >0, server will override cl_teamid_overhead_maxdist
 sv_teamid_overhead_maxdist_spec                                                  : 0                : sv, cl, rep, release             : If >0, server will override cl_teamid_overhead_maxdist_spec
 sv_timebetweenducks                                                              : 0.4              : sv, cl, rep, release             : Minimum time before recognizing consecutive duck key
-sv_tripwirefire_trace_length                                                     : 180              : sv, release                      : 
 sv_turning_inaccuracy_angle_min                                                  : 4                : sv, cl, rep, cheat, release      : 
 sv_turning_inaccuracy_decay                                                      : 0.8              : sv, cl, rep, cheat, release      : 
 sv_turning_inaccuracy_enabled                                                    : false            : sv, cl, rep, cheat, release      : 
@@ -2444,11 +2390,10 @@ sv_water_slow_amount                                                            
 sv_wateraccelerate                                                               : 10               : sv, cl, nf, rep, release         : 
 sv_waterfriction                                                                 : 1                : sv, cl, nf, rep, release         : 
 sv_weapon_require_use_grace_period                                               : 1                : sv, release                      : 
+sv_weapon_swap_difficulty_near_hi_pri                                            : 2                : sv, cl, rep, release             : 0 = Cone searches easily reach past high priority items to swap weapons. 1 = Cone searches are narrowed and require that the weapon is strictly closer. 2 = cone searches are disabled near high priority items
 sv_workshop_allow_other_maps                                                     : true             : sv, release                      : When hosting a workshop collection, users can play other workshop map on this server when it is empty and then mapcycle into this server collection.
 sys_info                                                                         : cmd              : release                          : Print system information to the console
 sys_minidumpspewlines                                                            : 2000             : release                          : Lines of crash dump console spew to keep.
-tablet_c4_dist_max                                                               : 3000             : sv, cl, rep, release             : 
-tablet_c4_dist_min                                                               : 400              : sv, cl, rep, release             : 
 teammenu                                                                         : cmd              : cl, server_can_execute           : Show team selection window
 telemetry_message                                                                : cmd              : sv, cheat                        : Place a message in the telemetry timeline
 telemetry_toggle_timespan                                                        : cmd              : sv, cheat                        : Starts/stops a timespan with an ever increasing name.
@@ -2473,7 +2418,6 @@ toggleconsole                                                                   
 trusted_launch                                                                   : 0                : cl, a                            : Trusted launch status
 tv_advertise_watchable                                                           : false            : prot, nf, norecord, release      : GOTV advertises the match as watchable via game UI, clients watching via UI will not need to type password
 tv_allow_autorecording_index                                                     : -1               : sv, release                      : When >=0 restricts autorecording only to the specified TV index
-tv_allow_camera_man_override                                                     : false            : release                          : Allows cameraman_override to have effect. When this is set, the primary interactive caster will have all the relevant fields present in all network packets, in every snapshot. This allows the secondary cameraman (-interactivecaster that connects to a tv port) to override those fields some seconds later regardless of whether they changed originally or not.
 tv_allow_camera_man_steamid                                                      : 0                : sv, release                      : Allows tournament production cameraman to run csgo.exe -interactivecaster on SteamID 7650123456XXX and be the camera man.
 tv_allow_camera_man_steamid2                                                     : 0                : sv, release                      : Allows tournament production tv cameraman to run csgo.exe -interactivecaster on SteamID 7650123456XXX and be the tv camera man.
 tv_allow_static_shots                                                            : true             : sv, release                      : Auto director uses fixed level cameras for shots
@@ -2526,7 +2470,7 @@ tv_playcast_showerrors                                                          
 tv_port                                                                          : 27020            : release                          : Host SourceTV[0] port
 tv_port1                                                                         : 27021            : release                          : Host SourceTV[1] port
 tv_record                                                                        : cmd              : release                          : Starts SourceTV demo recording.
-tv_record_immediate                                                              : 0                : release                          : tv_record starting the moment tv_record was executed, not tv_delay earlier
+tv_record_immediate                                                              : 1                : release                          : tv_record starting the moment tv_record was executed, not tv_delay earlier
 tv_relay                                                                         : cmd              : release                          : Connect to SourceTV server and relay broadcast.
 tv_relaypassword                                                                 : 0                : prot, nf, norecord, release      : SourceTV password for relay proxies
 tv_relayradio                                                                    : false            : sv, release                      : Relay team radio commands to TV: 0=off, 1=on
@@ -2548,12 +2492,12 @@ ui_deepstats_toplevel_mode                                                      
 ui_inventorysettings_recently_acknowledged                                       : 0                : cl, a, release                   : 
 ui_leaderboards_top_public_appid                                                 : 730              : cl, release                      : 
 ui_lobby_draft_enabled                                                           : false            : cl, release                      : 
-ui_mainmenu_bkgnd_movie_47C62B23                                                 : de_overpass      : cl, a, release                   : Main menu background movie
+ui_mainmenu_bkgnd_movie_1016BB11                                                 : de_dust2         : cl, a, release                   : Main menu background movie
 ui_nearbylobbies_filter3                                                         : competitive      : cl, a, release                   : 
 ui_news_last_read_link                                                           : 0                : cl, a, release                   : 
 ui_party_msg_sound_enabled                                                       : true             : cl, release                      : When enabled, lobby messages will play a short sound
 ui_playsettings_custom_preset                                                    : 0                : cl, a, release                   : 
-ui_playsettings_directchallengekey                                               : 0                : cl, a, release                   : 
+ui_playsettings_directchallengekey                                               : SDUEY-NYUE-S9T5R-A6TQ : cl, a, release                   : 
 ui_playsettings_flags_listen_casual                                              : 0                : cl, a, release                   : 
 ui_playsettings_flags_listen_competitive                                         : 16               : cl, a, release                   : 
 ui_playsettings_flags_listen_cooperative                                         : 0                : cl, a, release                   : 
@@ -2569,16 +2513,15 @@ ui_playsettings_flags_official_scrimcomp2v2                                     
 ui_playsettings_flags_official_skirmish                                          : 0                : cl, a, release                   : 
 ui_playsettings_flags_official_survival                                          : 0                : cl, a, release                   : 
 ui_playsettings_maps_listen_casual                                               : mg_de_mirage     : cl, a, release                   : 
-ui_playsettings_maps_listen_competitive                                          : mg_de_mirage     : cl, a, release                   : 
+ui_playsettings_maps_listen_competitive                                          : mg_de_dust2      : cl, a, release                   : 
 ui_playsettings_maps_listen_deathmatch                                           : mg_de_dust2      : cl, a, release                   : 
 ui_playsettings_maps_listen_scrimcomp2v2                                         : mg_de_inferno    : cl, a, release                   : 
 ui_playsettings_maps_listen_skirmish                                             : mg_skirmish_armsrace : cl, a, release                   : 
 ui_playsettings_maps_official_casual                                             : mg_casualdelta   : cl, a, release                   : 
-ui_playsettings_maps_official_deathmatch                                         : mg_casualdelta   : cl, a, release                   : 
+ui_playsettings_maps_official_deathmatch                                         : mg_dust247       : cl, a, release                   : 
 ui_playsettings_maps_workshop                                                    : 0                : cl, a, release                   : 
 ui_playsettings_mode_listen                                                      : casual           : cl, a, release                   : 
-ui_playsettings_mode_official_v20                                                : premier          : cl, a, release                   : 
-ui_playsettings_prime                                                            : 1                : cl, a, release                   : 
+ui_playsettings_mode_official_v20                                                : casual           : cl, a, release                   : 
 ui_playsettings_survival_solo                                                    : 0                : cl, a, release                   : 
 ui_playsettings_warmup_map_name                                                  : de_mirage        : cl, a, release                   : 
 ui_popup_weaponupdate_version                                                    : 2303             : cl, a, release                   : 
@@ -2589,8 +2532,8 @@ ui_show_unlock_competitive_alert                                                
 ui_steam_overlay_notification_position                                           : topright         : cl, a                            : Steam overlay notification position
 ui_steam_overlay_notification_position_horz                                      : 0                : cl, a                            : Steam overlay notification position horizontal offset
 ui_steam_overlay_notification_position_vert                                      : 0                : cl, a                            : Steam overlay notification position vertical offset
-ui_vanitysetting_loadoutslot_ct                                                  : smg3             : cl, a, release                   : 
-ui_vanitysetting_loadoutslot_t                                                   : smg0             : cl, a, release                   : 
+ui_vanitysetting_loadoutslot_ct                                                  : equipment1       : cl, a, release                   : 
+ui_vanitysetting_loadoutslot_t                                                   : heavy5           : cl, a, release                   : 
 ui_vanitysetting_team                                                            : ct               : cl, a, release                   : 
 unbind                                                                           : cmd              : release                          : Unbind a key.
 unbindall                                                                        : cmd              : release                          : Unbind all keys.
@@ -2618,7 +2561,6 @@ voice_loopback                                                                  
 voice_modenable                                                                  : true             : cl, a, release, clientcmd_can_execute : Enable/disable voice in this mod.
 voice_modenable_toggle                                                           : cmd              : cl, release                      : Toggle the voice_modenable convar.
 voice_player_speaking_delay_threshold                                            : 0.5              : sv, cheat                        : 
-voice_scale                                                                      : 0.6              : cl, a, release                   : Volume of incoming VOIP
 voice_test_log_send                                                              : false            : release                          : 
 voice_threshold                                                                  : 4000             : cl, a                            : 
 voice_vox                                                                        : 0                : cl, a, per_user                  : Voice chat uses a vox-style always on
@@ -2646,6 +2588,6 @@ weapon_near_empty_sound                                                         
 weapon_reticle_knife_show                                                        : true             : sv, cl, rep, release             : When enabled will show knife reticle on clients. Used for game modes requiring target id display when holding a knife.
 weapon_sound_falloff_multiplier                                                  : 1                : sv, cl, rep, cheat, release      : Scaling for falloff of weapon firing sounds
 writekeybindings                                                                 : cmd              : release                          : Saves current key bindings to disk.
-zoom_sensitivity_ratio                                                           : 0.82             : cl, a, per_user                  : Additional mouse sensitivity scale factor applied when FOV is zoomed in.
+zoom_sensitivity_ratio                                                           : 1                : cl, a, per_user                  : Additional mouse sensitivity scale factor applied when FOV is zoomed in.
 --------------
-2647 total convars/concommands
+2589 total convars/concommands
