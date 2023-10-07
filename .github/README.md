@@ -5,12 +5,12 @@ The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patch
 ##### View [cvarlist.log](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvarlist.log), latest version (of this git).
 
 > [!IMPORTANT]  
-> Be aware that the cvars value are not necessary the default ones! Some values could be outputed directly from my game settings.
+> The cvars value are not necessary the default ones. Some values could be outputed directly from personal game settings.
 
 ## Version
 
 ```
-1.39.5.0/2000143
+1.39.5.8/2000152
 ```
 
 ### History
