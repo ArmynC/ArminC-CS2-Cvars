@@ -122,7 +122,7 @@ c_thirdpersonshoulderaimdist                                                    
 c_thirdpersonshoulderdist                                                        : 40               : cl, a                            : 
 c_thirdpersonshoulderheight                                                      : 5                : cl, a                            : 
 c_thirdpersonshoulderoffset                                                      : 20               : cl, a                            : 
-cachedvalue_count_partybrowser                                                   : 1696526848       : cl, a                            : 
+cachedvalue_count_partybrowser                                                   : 1697283604       : cl, a                            : 
 cachedvalue_count_teammates                                                      : 0                : cl, a                            : 
 callvote                                                                         : cmd              : sv                               : Start a vote on an issue.
 cam_collision                                                                    : 1                : cl, a                            : When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
@@ -322,7 +322,7 @@ cl_glow_item_far_g                                                              
 cl_glow_item_far_r                                                               : 0.3              : cl, release                      : 
 cl_hide_avatar_images                                                            : 0                : cl, a                            : Hide avatar images for other players.   0 - Off.  1 - Block All  2 - Block all but friends
 cl_http_log_enable                                                               : false            : cl, norecord, release, clientcmd_can_execute : Allows sending HTTP log from client main menu.
-cl_hud_color                                                                     : 9                : cl, a, release                   : 0 = team color, 1 = white, 2 = bright white, 3 = light blue, 4 = blue, 5 = purple, 6 = red, 7 = orange, 8 = yellow, 9 = green, 10 = aqua, 11 = pink.
+cl_hud_color                                                                     : 9                : cl, a, release                   : 0 = team color, 1 =  white, 2 = bright white, 3 = light blue, 4 = blue, 5 = purple, 6 = red, 7 = orange, 8 = yellow, 9 = green, 10 = aqua, 11 = pink, 12 = teammate color.
 cl_hud_radar_scale                                                               : 1.2              : cl, a, release                   : 
 cl_ignorepackets                                                                 : false            : cheat                            : Force client to ignore packets (for debugging).
 cl_imgui_set_selection                                                           : cmd              : cl, cheat                        : Sets ImGui selection
@@ -379,7 +379,7 @@ cl_playerspray_auto_apply                                                       
 cl_playerspraydisable                                                            : false            : cl, a                            : Disable player sprays.
 cl_predict                                                                       : true             : cl, user, cheat                  : Perform client side prediction.
 cl_predictweapons                                                                : true             : cl, user                         : Perform client side prediction of weapon effects.
-cl_promoted_settings_acknowledged                                                : 1:1696598461021  : cl, a                            : 
+cl_promoted_settings_acknowledged                                                : 1:1697283654924  : cl, a                            : 
 cl_prop_debug                                                                    : cmd              : cl, cheat                        : Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1.
 cl_querycache_stats                                                              : cmd              : cl, cheat                        : Display status of the query cache (client only)
 cl_quickinventory_filename                                                       : radial_quickinventory.txt : cl, a, release                   : 
@@ -483,7 +483,8 @@ cl_spec_stats                                                                   
 cl_spec_swapplayersides                                                          : false            : cl, release                      : Toggle set the player names and team names to the opposite side in which they are are on the spectator panel.
 cl_spec_use_tournament_content_standards                                         : false            : cl, release                      : 
 cl_spewserializers                                                               : cmd              : cheat                            : Spew serializers
-cl_teamid_overhead_colors_show                                                   : false            : cl, a, release                   : Show team overhead id in teammate color
+cl_teamcounter_playercount_instead_of_avatars                                    : false            : cl, a, release                   : 
+cl_teamid_overhead_colors_show                                                   : true             : cl, a, release                   : Show team overhead id in teammate color
 cl_teamid_overhead_maxdist                                                       : 6000             : cl, cheat, per_user              : max distance at which the overhead team id icons will show
 cl_teamid_overhead_maxdist_spec                                                  : 4000             : cl, cheat, per_user              : max distance at which the overhead team id icons will show when a spectator
 cl_teamid_overhead_mode                                                          : 2                : cl, a, release                   : Always show team id over teammates. 1 = pips; 2 = pips, name, and equipment
@@ -500,6 +501,8 @@ cl_wallbang_heavy_threshold                                                     
 cl_weapon_clip_thinwalls                                                         : true             : cl, rep, cheat                   : 
 cl_weapon_clip_thinwalls_debug                                                   : false            : cl, rep, cheat                   : 
 cl_weapon_clip_thinwalls_lock                                                    : false            : cl, rep, cheat                   : 
+cl_weapon_clip_thinwalls_pitchlimit_down                                         : 67               : cl, rep, cheat                   : 
+cl_weapon_clip_thinwalls_pitchlimit_up                                           : 77               : cl, rep, cheat                   : 
 cl_weapon_debug_show_accuracy                                                    : 0                : cl, cheat, release               : Draws a circle representing the effective range with every shot.
 cl_weapon_debug_show_accuracy_duration                                           : 10               : cl, cheat, release               : 
 cl_wpn_sway_scale                                                                : 1                : cl, cheat                        : 
@@ -564,7 +567,7 @@ csgo_download_match                                                             
 csgo_econ_action_preview                                                         : cmd              : cl, norecord, clientcmd_can_execute : Preview an economy item
 csgo_fatdemo_enable                                                              : false            : sv, cl, rep, release             : 
 csgo_fatdemo_output                                                              : test.fatdem      : sv, cl, rep, release             : 
-csgo_map_preview_scale                                                           : 6.78971          : cl, a                            : 
+csgo_map_preview_scale                                                           : 6.80171          : cl, a                            : 
 csgo_use_fullsort_for_opaque                                                     : true             : cl, cheat                        : fullsort the opaque pass when there wasn't a depth prepass
 csgo_video_settings_restore_previous                                             : cmd              : cl, release                      : csgo_video_settings_restore_previous
 csgo_watch_friend_session_exit_current                                           : cmd              : cl, clientcmd_can_execute        : 
@@ -850,7 +853,7 @@ inferno_velocity_normal_factor                                                  
 input_button_code_is_scan_code                                                   : true             : a                                : Bind keys based on keyboard position instead of key name
 input_filter_relative_analog_inputs                                              : false            : cl, a                            : 
 input_forceuser                                                                  : -1               : cheat                            : Force user input to this split screen player.
-install_dlc_workshoptools_cvar                                                   : -1               : cl, release                      : DLC Install Status
+install_dlc_workshoptools_cvar                                                   : 0                : cl, release                      : DLC Install Status
 invnext                                                                          : cmd              : cl, server_can_execute           : 
 invnextselect                                                                    : cmd              : cl, server_can_execute           : 
 invprev                                                                          : cmd              : cl, server_can_execute           : 
@@ -1561,7 +1564,7 @@ noclip_fixup                                                                    
 notarget                                                                         : cmd              : sv, cheat                        : Toggle. Player becomes hidden to NPCs.
 option_duck_method                                                               : false            : cl, a, user, per_user            : Input toggle control
 option_speed_method                                                              : false            : cl, a, user, per_user            : Input toggle control
-panorama_console_position_and_size                                               : 468.00|109.00|1157.00|832.00 : cl, a                            : 
+panorama_console_position_and_size                                               : 49.00|124.00|1157.00|832.00 : cl, a                            : 
 panorama_debug_overlay_opacity                                                   : 0.25             : a                                : 
 panorama_debug_overlay_opacity_max                                               : 0.25             : a                                : 
 panorama_debug_overlay_opacity_min                                               : 0.01             : a                                : 
@@ -1593,6 +1596,7 @@ phys_visualize_traces                                                           
 pixelvis_debug                                                                   : cmd              : cheat                            : Dump debug info
 plant_bomb                                                                       : cmd              : sv, cheat                        : Plant a bomb where the player is looking.
 play                                                                             : cmd              : server_can_execute               : Play a sound.
+playcast                                                                         : cmd              : release                          : Play a broadcast
 playdemo                                                                         : cmd              : release                          : Play a recorded demo file (.dem ).
 player0_using_joystick                                                           : false            : a                                : 
 player_botdifflast_s                                                             : 2                : cl, a, release                   : 
@@ -2126,7 +2130,7 @@ spec_show_xray                                                                  
 spec_usenumberkeys_nobinds                                                       : true             : cl, a                            : If set to 1, map voting and spectator view use the raw number keys instead of the weapon binds (slot1, slot2, etc).
 spec_xray_dropped_defusekits                                                     : true             : cl, release                      : Whether to X-ray dropped defuse kits.
 spec_xray_dropped_unoccluded                                                     : true             : cl, release                      : Whether to always X-ray dropped c4 and defuse kits.
-splitscreen_mode                                                                 : 0                : a                                : 
+splitscreen_mode                                                                 : 0                : a, cheat                         : 
 +spray_menu                                                                      : cmd              : cl, release                      : 
 startdemos                                                                       : cmd              : release                          : Play demos in demo sequence.
 status                                                                           : cmd              : release                          : Print connection status
@@ -2366,6 +2370,7 @@ sv_timebetweenducks                                                             
 sv_turning_inaccuracy_angle_min                                                  : 4                : sv, cl, rep, cheat, release      : 
 sv_turning_inaccuracy_decay                                                      : 0.8              : sv, cl, rep, cheat, release      : 
 sv_turning_inaccuracy_enabled                                                    : false            : sv, cl, rep, cheat, release      : 
+sv_unify_random_seed                                                             : false            : sv, release                      : Should we securely share seeds between the client and server?
 sv_unlockedchapters                                                              : 1                : a                                : Highest unlocked game chapter.
 sv_update_animgraph_movement_in_finish                                           : true             : sv, cl, rep, cheat               : Whether we should update animgraph movement in FinishMove.
 sv_usercmd_custom_random_seed                                                    : true             : sv, cl, rep, release             : When enabled server will populate an additional random seed independent of the client
@@ -2600,4 +2605,4 @@ weapon_sound_falloff_multiplier                                                 
 writekeybindings                                                                 : cmd              : release                          : Saves current key bindings to disk.
 zoom_sensitivity_ratio                                                           : 1                : cl, a, per_user                  : Additional mouse sensitivity scale factor applied when FOV is zoomed in.
 --------------
-2599 total convars/concommands
+2604 total convars/concommands
