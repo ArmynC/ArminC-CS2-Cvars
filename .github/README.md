@@ -10,7 +10,7 @@ The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patch
 ## Version
 
 ```
-1.39.6.2
+1.39.8.2
 ```
 
 ### History
