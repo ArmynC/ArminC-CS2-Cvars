@@ -16,7 +16,7 @@ The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patch
 
 ### History
 
-Looking for a specific release? [Here is the list of updates.](https://github.com/ArmynC/ArminC-CS2-Cvars/commits/main/cvarlist.log)
+Looking for a specific release? [Here is the list of updates.](https://github.com/ArmynC/ArminC-CS2-Cvars/commits)
 
 #### Self check
 
