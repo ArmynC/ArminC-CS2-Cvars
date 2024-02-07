@@ -2,7 +2,8 @@
 
 The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patchnotes/) console commands and variables (hidden/development-only too).
 
-##### View [cvarlist.log](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvarlist.log), latest version (of this git).
+##### View latest [cvarlist.md](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvarlist.md) version on this git.
+##### Check the [raw variant](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvarlist.md?plain=1).
 
 > [!IMPORTANT]  
 > The cvar values are not necessary the default ones. Some values could be altered by the game settings.
@@ -10,7 +11,7 @@ The following is a list of [Counter-Strike 2](https://steamdb.info/app/730/patch
 ## Version
 
 ```
-1.39.8.2
+1.39.8.7
 ```
 
 ### History
@@ -19,7 +20,7 @@ Looking for a specific release? [Here is the list of updates.](https://github.co
 
 #### Self check
 
-The option, depending on how frequently the list is updated, is to [self-check the most recent cvars](https://github.com/saul/cvar-unhide-s2).
+Depending on how frequently the list is updated, you could [check on your own the most recent cvars](https://github.com/saul/cvar-unhide-s2).
 
 ## License
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
