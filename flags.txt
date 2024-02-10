@@ -1,2 +1,0 @@
--insecure -condebug -conclearlog -console
-log_flags Console -ConsoleOnly; log_flags Developer -ConsoleOnly; log_flags DeveloperConsole -ConsoleOnly; log_flags DeveloperVerbose -ConsoleOnly; cvarlist; cvar_unhide; cvarlist
