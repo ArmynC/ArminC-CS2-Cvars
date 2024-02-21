@@ -11,7 +11,7 @@ def generate_play_cvar(root_dir, output_file):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("python generate_tree.py <path>")
+        print("python generate_cvar.py folder_path")
         sys.exit(1)
 
     folder_path = sys.argv[1]
