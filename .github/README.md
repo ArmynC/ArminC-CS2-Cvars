@@ -5,7 +5,7 @@ Additionally, there are included the sound resources path, which could be used i
 
 #### Console commands
 ##### View latest [cvarlist.md](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvars/cvarlist.md) version on this git.
-##### Check the [raw variant](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvars/cvarlist.md?plain=1).
+##### Check the [plain variant](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/cvars/cvarlist.md?plain=1).
 
 #### Sounds paths
 ##### See the [sounds with their cvars](https://github.com/ArmynC/ArminC-CS2-Cvars/blob/main/sounds/sounds_cvar.txt).
@@ -17,7 +17,7 @@ Additionally, there are included the sound resources path, which could be used i
 #### Console commands
 
 ```
-1.39.8.7
+1.39.9.4
 ```
 
 #### Sounds path cvars
